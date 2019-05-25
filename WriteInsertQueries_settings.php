@@ -6,14 +6,17 @@
  * Time: 2:51 PM
  */
 
+// Starting image set id
+$set_id=4257;
+
 // The location of the list of image sets
-$file_imagesets = "/Users/starstryder/Desktop/TINYTEST/5imageMaster.txt";
+$file_imagesets = "/Users/starstryder/Desktop/2_CQ_Even_51to100_master.txt";
 
 // The location where the query file should go
-$file_queries = "/Users/starstryder/Desktop/queries.sql";
+$file_queries = "/Users/starstryder/Desktop/queries_51to100.sql";
 
 // Path to images (likely on S3)
-$path_choppedImages = "https://s3.amazonaws.com/cosmoquest/data/mappers/osiris/5imageMaster/CHOPPEDIMAGES/";
+$path_choppedImages = "https://s3.amazonaws.com/cosmoquest/data/mappers/osiris/ImageDelivery_20190520/CHOPPEDIMAGES/";
 
 // Kind of offset. Allowed values: manual, offset
 $offset_type = "manual";
