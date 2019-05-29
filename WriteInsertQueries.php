@@ -11,19 +11,19 @@ require_once("WriteInsertQueries_settings.php");
 
 // Step 1: Open files
 $imagesets = fopen($file_imagesets, 'r') or die("Cannot open " . $file_imagesets);
-$output    = fopen($file_queries, 'w') or die("Cannot open " . $$file_queries);
+$output    = fopen($file_queries, 'w') or die("Cannot open " . $file_queries);
 
 while (!feof($imagesets)) {
 
     $image = fgets($imagesets);
 
-    if (strlen($imagesets) > 5) {
+    if (strlen($image) > 5) {
         $extension = substr($image, -5, -1);
         $image = substr($image, 0, -5);
 
         // Create the Image Set Insert - RUN THIS ALONE FOR NOW, THEN COMMENT OUT
-        $query = "INSERT INTO image_sets (name, application_id) VALUES ('" . $image . $extension . "', 21);\r\n ";
-        fwrite($output, $query);
+ //       $query = "INSERT INTO image_sets (name, application_id) VALUES ('" . $image . $extension . "', 21);\r\n ";
+   //     fwrite($output, $query);
 
         // Step 2: Get offsets
         //      Step 2a: enter offset amount
@@ -57,6 +57,7 @@ while (!feof($imagesets)) {
             die("Valid offset type not given.");
         }
         $set_id++;
+
     }
 }
 

@@ -7,13 +7,13 @@
  */
 
 // Starting image set id
-$set_id=4257;
+$set_id=4357;
 
 // The location of the list of image sets
-$file_imagesets = "/Users/starstryder/Desktop/2_CQ_Even_51to100_master.txt";
+$file_imagesets = "/Users/starstryder/Desktop/4_CQ_Even_151to200_master.txt";
 
 // The location where the query file should go
-$file_queries = "/Users/starstryder/Desktop/queries_51to100.sql";
+$file_queries = "/Users/starstryder/Desktop/queries_151to200.sql";
 
 // Path to images (likely on S3)
 $path_choppedImages = "https://s3.amazonaws.com/cosmoquest/data/mappers/osiris/ImageDelivery_20190520/CHOPPEDIMAGES/";
